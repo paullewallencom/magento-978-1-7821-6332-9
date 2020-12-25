@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Packt_Productslider>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Widget />
+            </depends>
+        </Packt_Productslider>
+    </modules>
+</config>

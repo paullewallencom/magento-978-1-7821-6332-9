@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <helloworld_index_hello>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-right.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="helloworld/newproducts" name="block_newproducts" template="helloworld/newproducts.phtml" />
+        </reference>
+    </helloworld_index_hello>
+</layout>

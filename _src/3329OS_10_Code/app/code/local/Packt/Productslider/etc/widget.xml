@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+    <category_product_slider type="productslider/catalog_product_list">
+        <name>Category product slider</name>
+        <description>Displays the products for a given category in a slider widget</description>
+        <parameters>
+            <title>
+                <label>Title (frontend)</label>
+                <type>text</type>
+                <required>1</required>
+                <sort_order>10</sort_order>
+                <visible>1</visible>
+            </title>
+            <category_id>
+                <label>Category</label>
+                <type>label</type>
+                <helper_block>
+                    <type>productslider/adminhtml_catalog_category_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Category...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <required>1</required>
+                <sort_order>20</sort_order>
+                <visible>1</visible>
+            </category_id>
+            <template>
+                <label>Frontend template</label>
+                <type>select</type>
+                <values>
+                    <list translate="label">
+                        <value>productslider/category-product-slider/list.phtml</value>
+                        <label>List template</label>
+                    </list>
+                    <teaser translate="label">
+                        <value>productslider/category-product-slider/teaser.phtml</value>
+                        <label>Teaser template</label>
+                    </teaser>
+                </values>
+                <sort_order>30</sort_order>
+                <visible>1</visible>
+            </template>
+        </parameters>
+    </category_product_slider>
+</widgets>

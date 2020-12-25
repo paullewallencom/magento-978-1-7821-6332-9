@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Packt_Helloworld>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Packt_Helloworld>
+    </modules>
+</config>

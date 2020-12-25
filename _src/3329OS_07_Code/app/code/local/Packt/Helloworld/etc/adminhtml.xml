@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <customer>
+                        <children>
+                            <subscription>
+                                <title>Helloworld subscriptions</title>
+                                <sort_order>10</sort_order>
+                            </subscription>
+                        </children>
+                    </customer>
+                    <system>
+                        <children>
+                            <helloworld>
+                                <title>Helloworld index page</title>
+                                <sort_order>10</sort_order>
+                            </helloworld>
+                            <config>
+                                <children>
+                                    <helloworld translate="title" module="helloworld">
+                                        <title>Helloworld section</title>
+                                    </helloworld>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <customer>
+            <children>
+                <subscription translate="title" module="helloworld">
+                    <title>Helloworld subscriptions</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/helloworld_subscription</action>
+                </subscription>
+            </children>
+        </customer>
+        <system>
+            <children>
+                <helloworld translate="title" module="helloworld">
+                    <title>Helloworld</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/helloworld_index</action>
+                </helloworld>
+            </children>
+        </system>
+    </menu>
+</config>

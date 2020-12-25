@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs">
+                <js>jquery/jquery.js</js>
+            </action>
+            <action method="addJs">
+                <js>jquery/jquery.noconflict.js</js>
+            </action>
+        </reference>
+    </default>
+</layout>

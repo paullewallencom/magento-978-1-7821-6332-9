@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <modules>
+        <Packt_Shipme>
+            <version>0.0.1</version>
+        </Packt_Shipme>
+    </modules>
+    
+    <global>
+        <models>  
+            <shipme>
+                <class>Packt_Shipme_Model</class>
+            </shipme>
+        </models>
+    </global>
+    
+    <default>
+        <carriers>
+            <shipme>
+                <active>1</active>
+                <model>shipme/carrier_shipme</model>
+                <title>Shipme shipping</title>
+                
+                <express_enabled>1</express_enabled>
+                <express_title>Express delivery</express_title>
+                <express_price>4</express_price>
+                
+                <business_enabled>1</business_enabled>
+                <business_title>Business delivery</business_title>
+                <business_price>5</business_price>
+            </shipme>
+        </carriers>
+    </default>
+    
+</config>
